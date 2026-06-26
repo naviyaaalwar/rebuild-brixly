@@ -97,3 +97,18 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+/* ==========================================================================
+   Form Accessibility & Readability Fixes
+   ========================================================================== */
+
+/* Forces input typed text and placeholder text to be highly visible */
+.form-control {
+    color: #ffffff !important; 
+}
+
+/* Adjusts the placeholder text color so users can see the hint text clearly */
+.form-control::placeholder {
+    color: rgba(191, 211, 193, 0.6) !important; /* Semi-transparent Sage Tint */
+    opacity: 1; /* Overrides browser defaults */
+}
