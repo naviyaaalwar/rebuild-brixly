@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Rebuild Team & Backstory" />
+        <meta name="author" content="Rebuild" />
+        <title>Rebuild | Brixly</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/cool.png" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+/* Creates the indicator line for the current active subpage */
+.nav-link.active {
+    position: relative;
+    color: #ffffff !important; /* Makes the active page slightly brighter */
+}
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px; /* Spacing between text and line */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the indicator line */
+    background-color: #bfd3c1; /* Uses your Sage Tint accent color */
+    border-radius: 2px;
+}
+
+            /* Continuous Deep Eucalyptus Canvas */
+            html, body {
+                background-color: #1d3535 !important;
+                color: #ffffff !important;
+                font-family: 'Quicksand', sans-serif !important;
+                overflow-x: hidden;
+            }
+            
+            .navbar-brand {
+                font-family: 'Comfortaa', sans-serif !important;
+                font-weight: 700;
+                color: #bfd3c1 !important; /* Fixed to Sage Tint */
+            }
+
+            /* Clean Sage Navbar links */
+            .nav-link {
+                font-weight: 700;
+                font-size: 0.95rem;
+                color: #bfd3c1 !important;
+                opacity: 1 !important;
+                transition: opacity 0.2s ease;
+            }
+            .nav-link:hover {
+                opacity: 0.7 !important;
+            }
+            
+            /* Solid, toned-down Slate Tint panels for Team Profiles */
+            .vibe-card {
+    background-color: #2d4a4a !important; 
+    border: 1px solid rgba(191, 211, 193, 0.1) !important;
+    border-radius: 24px !important;
+    padding: 2.5rem !important;
+    box-shadow: 0 1rem 3rem rgba(10, 20, 20, 0.25) !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease !important;
+    
+    /* Forces all cards in the row to stretch to the exact same height */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+            .vibe-card:hover {
+                transform: translateY(-6px);
+                border-color: rgba(191, 211, 193, 0.25) !important;
+            }
+
+            .vibe-card h3 {
+                color: #ffffff !important;
+                font-weight: 700;
+            }
+
+            .vibe-card .role {
+                color: #bfd3c1 !important;
+                font-weight: 700;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .vibe-card p {
+                color: #bfd3c1 !important;
+                opacity: 0.9;
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            /* Solid Background Box for Backstory */
+            .story-box {
+                background-color: #2d4a4a !important;
+                border: 2px solid #0a1414;
+                border-radius: 32px;
+                padding: 4rem 3rem;
+                box-shadow: 0 1rem 3rem rgba(10, 20, 20, 0.25);
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg py-4" style="background-color: #0a1414; border-bottom: 1px solid rgba(191, 211, 193, 0.08);">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <img src="assets/img/logo.png" alt="Logo" width="30" style="height: auto;" class="me-2" />
+                    <a class="navbar-brand m-0" href="index.html">Rebuild | Brixly</a>
+                </div>
+                <div class="navbar-nav ms-auto flex-row align-items-center" style="gap: 2.5rem;">
+             <a class="nav-link" href="product.html">Brixly</a>
+             <a class="nav-link active" href="about.html">Our Team</a>
+             <a class="nav-link" href="contact.html">Contact Us</a>
+            </div>
+            </div>
+        </nav>
+
+        <header class="py-5 text-center">
+            <div class="container my-4">
+                <span style="font-weight: 700; font-size: 0.85rem; color: #bfd3c1 !important; text-transform: uppercase; letter-spacing: 3px; display: block;" class="mb-3">
+                    The Co-Founders
+                </span>
+                <h1 class="display-4 fw-bold mb-3">Meet Our Team</h1>
+                <p class="lead mx-auto" style="max-width: 600px; color: #bfd3c1; opacity: 0.9;">
+                We are a dedicated group of innovators combining structural engineering and environmental action to change how construction waste and rehabilitation crises are handled.
+                </p>
+            </div>
+        </header>
+
+        <section class="pb-5">
+            <div class="container my-4">
+                <div class="story-box">
+                    <div class="text-center mb-4 pb-2">
+                        <span style="font-weight: 700; font-size: 0.85rem; color: #bfd3c1 !important; text-transform: uppercase; letter-spacing: 2px; display: block;" class="mb-2">
+                            <i class="bi bi-history me-1"></i> Our Purpose
+                        </span>
+                        <h2 class="fw-bold mb-0" style="color: #ffffff; letter-spacing: -1px; font-size: 2.25rem;">Why We Founded Rebuild</h2>
+                    </div>
+                    
+                    <hr style="border-color: rgba(191, 211, 193, 0.15); max-width: 100px; margin: 0 auto 2.5rem auto; border-width: 2px; opacity: 1;">
+
+                    <div class="row justify-content-center" style="color: #bfd3c1; opacity: 0.95; font-size: 1.1rem; line-height: 1.8;">
+                        <div class="col-lg-10 text-center">
+                            <p class="m-0">
+                                The current construction industry is built on toxic materials and destructive production habits. Every year, the manufacturing of traditional materials like concrete and mortar pump massive amounts of greenhouse gases into our atmosphere. Rebuild aims to tackle both of these crises at once. Our goal is to address construction pollution and the rehabilitation crisis in one brick. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container mb-5">
+                <div class="row g-4 justify-content-center">
+                    
+                    <div class="col-lg-6 col-md-8 mx-auto mb-4">
+    <div style="background-color: #2d4a4a; border: 2px solid #0a1414; border-radius: 32px; padding: 3rem; box-shadow: 0 1.5rem 4rem rgba(10, 20, 20, 0.3);">
+        
+        <div class="text-center mb-4">
+            <div style="width: 180px; height: 180px; margin: 0 auto; border: 3px solid #bfd3c1; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #0a1414; box-shadow: 0 0.5rem 1.5rem rgba(10, 20, 20, 0.2);">
+                <img src="assets/img/naviya.png" alt="Co-Founder Name" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h3 class="h3 fw-bold mb-2" style="font-family: 'Comfortaa', sans-serif !important; color: #ffffff;">Naviya Alwar</h3>
+            <span style="font-weight: 700; font-size: 0.9rem; color: #bfd3c1 !important; text-transform: uppercase; letter-spacing: 2px; display: block;">
+                Co-Founder
+            </span>
+        </div>
+
+    </div>
+</div>
+
+                    <div class="col-lg-6 col-md-8 mx-auto mb-4">
+    <div style="background-color: #2d4a4a; border: 2px solid #0a1414; border-radius: 32px; padding: 3rem; box-shadow: 0 1.5rem 4rem rgba(10, 20, 20, 0.3);">
+        
+        <div class="text-center mb-4">
+            <div style="width: 180px; height: 180px; margin: 0 auto; border: 3px solid #bfd3c1; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #0a1414; box-shadow: 0 0.5rem 1.5rem rgba(10, 20, 20, 0.2);">
+                <img src="assets/img/ananya.png" alt="Co-Founder Name" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h3 class="h3 fw-bold mb-2" style="font-family: 'Comfortaa', sans-serif !important; color: #ffffff;">Ananya Chakka</h3>
+            <span style="font-weight: 700; font-size: 0.9rem; color: #bfd3c1 !important; text-transform: uppercase; letter-spacing: 2px; display: block;">
+                Co-Founder
+            </span>
+        </div>
+
+    </div>
+</div>
+
+                    <div class="col-lg-6 col-md-8 mx-auto mb-4">
+    <div style="background-color: #2d4a4a; border: 2px solid #0a1414; border-radius: 32px; padding: 3rem; box-shadow: 0 1.5rem 4rem rgba(10, 20, 20, 0.3);">
+        
+        <div class="text-center mb-4">
+            <div style="width: 180px; height: 180px; margin: 0 auto; border: 3px solid #bfd3c1; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #0a1414; box-shadow: 0 0.5rem 1.5rem rgba(10, 20, 20, 0.2);">
+                <img src="assets/img/dhritii.png" alt="Co-Founder Name" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h3 class="h3 fw-bold mb-2" style="font-family: 'Comfortaa', sans-serif !important; color: #ffffff;">Dhriti Saani</h3>
+            <span style="font-weight: 700; font-size: 0.9rem; color: #bfd3c1 !important; text-transform: uppercase; letter-spacing: 2px; display: block;">
+                Co-Founder
+            </span>
+        </div>
+
+    </div>
+</div>
+
+                    <div class="col-lg-6 col-md-8 mx-auto mb-4">
+    <div style="background-color: #2d4a4a; border: 2px solid #0a1414; border-radius: 32px; padding: 3rem; box-shadow: 0 1.5rem 4rem rgba(10, 20, 20, 0.3);">
+        
+        <div class="text-center mb-4">
+            <div style="width: 180px; height: 180px; margin: 0 auto; border: 3px solid #bfd3c1; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #0a1414; box-shadow: 0 0.5rem 1.5rem rgba(10, 20, 20, 0.2);">
+                <img src="assets/img/jeslyn.png" alt="Co-Founder Name" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h3 class="h3 fw-bold mb-2" style="font-family: 'Comfortaa', sans-serif !important; color: #ffffff;">Jeslyn George</h3>
+            <span style="font-weight: 700; font-size: 0.9rem; color: #bfd3c1 !important; text-transform: uppercase; letter-spacing: 2px; display: block;">
+                Co-Founder
+            </span>
+        </div>
+
+    </div>
+</div>
+
+                </div>
+            </div>
+        </section>
+
+      <footer class="py-5" style="background-color: #0a1414; border-top: 1px solid rgba(191, 211, 193, 0.08); margin-top: auto;">
+    
+    <style>
+        .footer-link-hover {
+            color: #bfd3c1 !important;
+            text-decoration: none !important;
+            font-weight: 600;
+            transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        }
+        /* When a user hovers, it smoothly dims slightly to create click-feedback */
+        .footer-link-hover:hover {
+            color: #ffffff !important; /* Changes text color to solid white */
+            opacity: 0.75;             /* Or dims it slightly, customize to preference */
+        }
+    </style>
+
+    <div class="container">
+        <div class="row align-items-center justify-content-between" style="font-size: 0.95rem; font-family: 'Quicksand', sans-serif;">
+            
+            <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
+                <h3 class="fw-extrabold mb-3" style="font-family: 'Comfortaa', sans-serif !important; color: #ffffff; letter-spacing: -0.5px; font-size: 1.75rem; font-weight: 800;">
+                    Rebuild <span style="color: #bfd3c1; font-weight: 300;">|</span> Brixly
+                </h3>
+                <p class="mb-3" style="color: #bfd3c1; opacity: 0.8; font-size: 0.9rem; line-height: 1.5; max-width: 320px;">
+                    Rebuilding Futures: One Brick at a Time.
+                </p>
+                <p class="mb-0" style="color: #bfd3c1; opacity: 0.5; font-size: 0.8rem;">
+                    &copy; 2026 Rebuild. All Rights Reserved.
+                </p>
+            </div>
+            
+            <div class="col-md-7 col-lg-6">
+                <div class="row align-items-start justify-content-center justify-content-md-end g-0">
+                    
+                    <div class="col-auto text-start px-4">
+                        <span style="font-size: 0.75rem; font-weight: 700; color: #bfd3c1; opacity: 0.5; text-transform: uppercase; letter-spacing: 1.5px; display: block;" class="mb-2">
+                            Sitemap
+                        </span>
+                        <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                            <li><a href="index.html" class="footer-link-hover">Home</a></li>
+                            <li><a href="product.html" class="footer-link-hover">Brixly</a></li>
+                            <li><a href="about.html" class="footer-link-hover">Our Team</a></li>
+                            <li><a href="contact.html" class="footer-link-hover">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-auto p-0 align-self-center" style="width: 1px; height: 150px; background-color: rgba(191, 211, 193, 0.25);"></div>
+                    
+                    <div class="col-auto text-start px-4">
+                        <span style="font-size: 0.75rem; font-weight: 700; color: #bfd3c1; opacity: 0.5; text-transform: uppercase; letter-spacing: 1.5px; display: block;" class="mb-2">
+                            Reach Out
+                        </span>
+                        <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                            <li>
+                                <a href="mailto:rebuild.brixly@gmail.com" class="footer-link-hover">
+                                    <i class="bi bi-envelope-fill me-1"></i> Email
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/rebuild.brixly" target="_blank" rel="noopener noreferrer" class="footer-link-hover">
+                                    <i class="bi bi-instagram me-1"></i> Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Brixly Competitor Comparison" />
+        <meta name="author" content="Rebuild" />
+        <title>Rebuild | Brixly</title>        
+        <link rel="icon" type="image/x-icon" href="assets/img/cool.png" />
+        
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet" />
+        
+        <style>
+            /* Continuous Deep Eucalyptus Canvas */
+            html, body {
+                background-color: #1d3535 !important;
+                color: #ffffff !important;
+                font-family: 'Quicksand', sans-serif !important;
+                overflow-x: hidden;
+            }
+            
+            .navbar-brand {
+                font-family: 'Comfortaa', sans-serif !important;
+                font-weight: 700;
+                color: #bfd3c1 !important;
+            }
+
+            /* Clean Sage Navbar links */
+            .nav-link {
+                font-family: 'Quicksand', sans-serif !important;
+                font-weight: 700;
+                font-size: 0.95rem;
+                color: #bfd3c1 !important;
+                opacity: 1 !important;
+                transition: opacity 0.2s ease;
+            }
+            .nav-link:hover {
+                opacity: 0.7 !important;
+            }
+
+            /* Active Page Navigation Indicator Line */
+            .nav-link.active {
+                position: relative;
+                color: #ffffff !important;
+            }
+            .nav-link.active::after {
+                content: '';
+                position: absolute;
+                bottom: -6px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #bfd3c1;
+                border-radius: 2px;
+            }
+            
+            /* Solid Structural Table Container */
+            .table-card {
+                background-color: #2d4a4a !important; 
+                border: 2px solid #0a1414 !important;
+                border-radius: 32px !important;
+                padding: 2.5rem !important;
+                box-shadow: 0 1.5rem 4rem rgba(10, 20, 20, 0.3) !important;
+                overflow-x: auto;
+            }
+
+            /* Custom Table Styling (Forced Fonts) */
+            .table {
+                color: #ffffff !important;
+                margin-bottom: 0;
+                vertical-align: middle;
+                font-family: 'Quicksand', sans-serif !important;
+            }
+            .table th {
+                border-bottom: 2px solid #0a1414 !important;
+                color: #bfd3c1 !important;
+                font-family: 'Quicksand', sans-serif !important;
+                font-weight: 700 !important;
+                text-transform: uppercase;
+                font-size: 0.85rem;
+                letter-spacing: 1px;
+                padding: 1.25rem;
+            }
+            .table td {
+                border-bottom: 1px solid rgba(191, 211, 193, 0.08) !important;
+                font-family: 'Quicksand', sans-serif !important;
+                padding: 1.5rem 1.25rem;
+                font-size: 0.95rem;
+            }
+            .table tr:last-child td {
+                border-bottom: none !important;
+            }
+
+            /* Highlight Row/Column text for Brixly */
+            .brixly-highlight {
+                color: #bfd3c1 !important;
+                font-weight: 700 !important;
+                font-family: 'Quicksand', sans-serif !important;
+            }
+
+            h1 {
+                font-family: 'Comfortaa', sans-serif !important;
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg py-4" style="background-color: #0a1414; border-bottom: 1px solid rgba(191, 211, 193, 0.08);">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <img src="assets/img/logo.png" alt="Logo" width="30" style="height: auto;" class="me-2" />
+                    <a class="navbar-brand m-0" href="index.html">Rebuild | Brixly</a>
+                </div>
+                <div class="navbar-nav ms-auto flex-row align-items-center" style="gap: 2.5rem;">
+                    <a class="nav-link" href="product.html">Brixly</a>
+                    <a class="nav-link" href="about.html">Our Team</a>
+                    <a class="nav-link active" href="competitors.html">Competitors</a> 
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <header class="py-5 text-center">
+            <div class="container my-4">
+                <span style="font-weight: 700; font-size: 0.85rem; color: #bfd3c1 !important; text-transform: uppercase; letter-spacing: 3px; display: block;" class="mb-3">
+                    Market Analysis
+                </span>
+                <h1 class="display-4 fw-bold mb-3">How We Stack Up</h1>
+                <p class="lead mx-auto" style="max-width: 600px; color: #bfd3c1; opacity: 0.9;">
+                    A side-by-side look at how circular material science outperforms old-school, resource-heavy alternatives.
+                </p>
+            </div>
+        </header>
+
+        <section class="pb-5 mb-5">
+            <div class="container">
+                <div class="table-card">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 30%;">Metric</th>
+                                <th scope="col" class="brixly-highlight" style="width: 25%;"><i class="bi bi-cpu me-1"></i> Brixly Block</th>
+                                <th scope="col" style="width: 22%;">Standard Concrete</th>
+                                <th scope="col" style="width: 23%;">Traditional Clay Brick</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold">Sourcing Foundation</td>
+                                <td class="brixly-highlight">100% Upcycled Infrastructure Debris</td>
+                                <td>Virgin Quarry Aggregate</td>
+                                <td>Depletable Topsoil Clay</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Carbon Footprint</td>
+                                <td class="brixly-highlight">~80% Lower Emissions Profile</td>
+                                <td>High-Impact Cement Sourcing</td>
+                                <td>Intense Fossil-Fueled Kiln Firing</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Manufacturing Loop</td>
+                                <td class="brixly-highlight">Zero-Waste Regional Recycling</td>
+                                <td>Linear (Take, Make, Waste)</td>
+                                <td>High Ecological Extraction Scrap</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Sourcing Proximity</td>
+                                <td class="brixly-highlight">Strict 50-Mile Regional Nodes</td>
+                                <td>Globalized Supply Dependencies</td>
+                                <td>Vast National Freight Sourcing</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Structural Performance</td>
+                                <td class="brixly-highlight">Engineered High-Density Load Rating</td>
+                                <td>Industry Baseline Compliant</td>
+                                <td>Variable Structural Load Limits</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+       <footer class="py-5" style="background-color: #0a1414; border-top: 1px solid rgba(191, 211, 193, 0.08); margin-top: auto;">
+    
+    <style>
+        .footer-link-hover {
+            color: #bfd3c1 !important;
+            text-decoration: none !important;
+            font-weight: 600;
+            transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        }
+        /* When a user hovers, it smoothly dims slightly to create click-feedback */
+        .footer-link-hover:hover {
+            color: #ffffff !important; /* Changes text color to solid white */
+            opacity: 0.75;             /* Or dims it slightly, customize to preference */
+        }
+    </style>
+
+    <div class="container">
+        <div class="row align-items-center justify-content-between" style="font-size: 0.95rem; font-family: 'Quicksand', sans-serif;">
+            
+            <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
+                <h3 class="fw-extrabold mb-3" style="font-family: 'Comfortaa', sans-serif !important; color: #ffffff; letter-spacing: -0.5px; font-size: 1.75rem; font-weight: 800;">
+                    Rebuild <span style="color: #bfd3c1; font-weight: 300;">|</span> Brixly
+                </h3>
+                <p class="mb-3" style="color: #bfd3c1; opacity: 0.8; font-size: 0.9rem; line-height: 1.5; max-width: 320px;">
+                    Rebuilding Futures: One Brick at a Time.
+                </p>
+                <p class="mb-0" style="color: #bfd3c1; opacity: 0.5; font-size: 0.8rem;">
+                    &copy; 2026 Rebuild. All Rights Reserved.
+                </p>
+            </div>
+            
+            <div class="col-md-7 col-lg-6">
+                <div class="row align-items-start justify-content-center justify-content-md-end g-0">
+                    
+                    <div class="col-auto text-start px-4">
+                        <span style="font-size: 0.75rem; font-weight: 700; color: #bfd3c1; opacity: 0.5; text-transform: uppercase; letter-spacing: 1.5px; display: block;" class="mb-2">
+                            Sitemap
+                        </span>
+                        <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                            <li><a href="index.html" class="footer-link-hover">Home</a></li>
+                            <li><a href="product.html" class="footer-link-hover">Brixly</a></li>
+                            <li><a href="about.html" class="footer-link-hover">Our Team</a></li>
+                            <li><a href="competitors.html" class="footer-link-hover">Competitors</a></li>
+                            <li><a href="contact.html" class="footer-link-hover">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-auto p-0 align-self-center" style="width: 1px; height: 150px; background-color: rgba(191, 211, 193, 0.25);"></div>
+                    
+                    <div class="col-auto text-start px-4">
+                        <span style="font-size: 0.75rem; font-weight: 700; color: #bfd3c1; opacity: 0.5; text-transform: uppercase; letter-spacing: 1.5px; display: block;" class="mb-2">
+                            Reach Out
+                        </span>
+                        <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                            <li>
+                                <a href="mailto:rebuild.brixly@gmail.com" class="footer-link-hover">
+                                    <i class="bi bi-envelope-fill me-1"></i> Email
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/rebuild.brixly" target="_blank" rel="noopener noreferrer" class="footer-link-hover">
+                                    <i class="bi bi-instagram me-1"></i> Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
