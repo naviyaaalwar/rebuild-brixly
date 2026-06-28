@@ -146,31 +146,34 @@ Whether you're a local business, looking for material specs, or interested in Re
                     </div>
 
                     <div class="col-lg-7">
-                        <div class="contact-card">
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <label class="form-label">First Name</label>
-                                        <input type="text" class="form-control" placeholder="John" required />
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" placeholder="Smith" required />
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label">Email Address</label>
-                                        <input type="email" class="form-control" placeholder="john@example.com" required />
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label">Message</label>
-                                        <textarea class="form-control" rows="5" placeholder="Tell us how we can collaborate!" required></textarea>
-                                    </div>
-                                    <div class="col-12 text-end mt-4">
-                                        <button type="submit" class="btn btn-submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                       <div class="contact-card">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        
+        <input type="hidden" name="access_key" value="57040469-53e0-42ab-9ab1-87b080a48a90">
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">First Name</label>
+                <input type="text" name="first_name" class="form-control" placeholder="John" required />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Last Name</label>
+                <input type="text" name="last_name" class="form-control" placeholder="Smith" required />
+            </div>
+            <div class="col-12">
+                <label class="form-label">Email Address</label>
+                <input type="email" name="email" class="form-control" placeholder="john@example.com" required />
+            </div>
+            <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea name="message" class="form-control" rows="5" placeholder="Tell us how we can collaborate!" required></textarea>
+            </div>
+            <div class="col-12 text-end mt-4">
+                <button type="submit" class="btn btn-submit">Send Message</button>
+            </div>
+        </div>
+    </form>
+</div>
                     </div>
 
                 </div>
