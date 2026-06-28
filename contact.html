@@ -147,8 +147,7 @@ Whether you're a local business, looking for material specs, or interested in Re
 
                     <div class="col-lg-7">
                        <div class="contact-card">
-    <form action="https://api.web3forms.com/submit" method="POST">
-        
+    <form id="contactForm" method="POST">
         <input type="hidden" name="access_key" value="57040469-53e0-42ab-9ab1-87b080a48a90">
 
         <div class="row g-3">
@@ -169,11 +168,52 @@ Whether you're a local business, looking for material specs, or interested in Re
                 <textarea name="message" class="form-control" rows="5" placeholder="Tell us how we can collaborate!" required></textarea>
             </div>
             <div class="col-12 text-end mt-4">
-                <button type="submit" class="btn btn-submit">Send Message</button>
+                <button type="submit" class="btn btn-submit" id="submitBtn">Send Message</button>
             </div>
         </div>
     </form>
 </div>
+
+<script>
+const form = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    submitBtn.innerText = "Sending...";
+    submitBtn.disabled = true;
+
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: json
+    })
+    .then(async (response) => {
+        let res = await response.json();
+        if (response.status == 200) {
+            // Displays a clean message to the user
+            alert("Thank you! Your message has been sent successfully to the Rebuild team.");
+            form.reset();
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    })
+    .catch(error => {
+        alert("Network error. Please try again later.");
+    })
+    .then(function() {
+        submitBtn.innerText = "Send Message";
+        submitBtn.disabled = false;
+    });
+});
+</script>
                     </div>
 
                 </div>
